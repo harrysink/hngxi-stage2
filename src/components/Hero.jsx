@@ -17,7 +17,7 @@ export const Hero = () => {
 
   return (
     <div style={{ display: 'block', position: 'relative'}}> 
-      <Carousel className='carousel carousel-fade mt-0'> 
+      <Carousel className='carousel carousel-fade mt-16'> 
         <Carousel.Item interval={50000} className='carousel-item'> 
           <div className='hero-img-div'>
             <img 
