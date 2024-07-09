@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faMagnifyingGlass, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faMagnifyingGlass, faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
 import logo from '../assets/Logo.png'
 
 
 export const NavBar = ({ fixed }) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
-  const hamburger = <FontAwesomeIcon icon={faBars} className="text-black"/>
+  const hamburger = <FontAwesomeIcon icon={faBars} className="text-black" />
+  const shoppingcart = <FontAwesomeIcon icon={faCartShopping} className="text-black" />
+  const search = <FontAwesomeIcon icon={faSearch} className="text-black" />
 
   return (
     <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white">
@@ -33,13 +35,23 @@ export const NavBar = ({ fixed }) => {
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="nav-item">
-              <Link to='Home' className="pr-3 py-2 flex items-center text-xs  font-bold leading-snug hover:opacity-75">HOME</Link>
+              <Link to='/Home' className="pr-3 py-2 flex items-center text-xs  font-bold leading-snug hover:opacity-75">HOME</Link>
             </li>
             <li className="nav-item">
-              <Link to='AboutUs' className="pr-3 py-2 flex items-center text-xs  font-bold leading-snug hover:opacity-75">ABOUT US</Link>
+              <Link to='/About' className="pr-3 py-2 flex items-center text-xs  font-bold leading-snug hover:opacity-75">ABOUT US</Link>
             </li>
             <li className="nav-item">
               <Link to='/Contact' className="pr-3 py-2 flex items-center text-xs  font-bold leading-snug hover:opacity-75">CONTACT</Link>
+            </li>
+            <li className="nav-item">
+              <Link to='#' className="pr-3 py-2 flex items-center text-xs  font-bold leading-snug hover:opacity-75">
+                {search}
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to='/Cart' className="pr-3 py-2 flex items-center text-xs  font-bold leading-snug hover:opacity-75">
+                {shoppingcart}
+              </Link>
             </li>
           </ul>
         </div>

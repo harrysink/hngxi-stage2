@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavBar } from '../components/NavBar'
-import { AboutHero } from '../components/ContactHero'
+import { AboutHero } from '../components/AboutHero'
 import { Footer } from '../components/Footer'
 
 export const About = () => {

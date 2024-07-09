@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import hero from '../assets/Mask group.png'
 import './Hero.css'
 
-export const AbouttHero = () => {
+export const AboutHero = () => {
     useEffect(() => {
         AOS.init({
           disable: "phone",
@@ -18,7 +18,7 @@ export const AbouttHero = () => {
 
   return (
     <div style={{ display: 'block', position: 'relative'}}> 
-      <Carousel className='carousel carousel-fade mt-5'> 
+      <Carousel className='carousel carousel-fade mt-0'> 
         <Carousel.Item interval={50000} className='carousel-item'> 
           <div className='hero-img-div'>
             <img 
