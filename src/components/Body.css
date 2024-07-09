@@ -1,0 +1,12 @@
+.bed {
+    padding: 50px 80px 50px 80px;
+    background: white;
+    backdrop-filter: blur(2px) !important;
+    opacity: 0.9;
+}
+.body {
+    margin-bottom: 80px !important;
+}
+.last-grid {
+    margin-bottom: 100px !important;
+}

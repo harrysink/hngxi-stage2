@@ -1,0 +1,13 @@
+.btn:hover {
+    color: #3AA39F !important;
+    border: 1px solid #3AA39F ;
+}
+.hero {
+    width: 100%;
+    object-fit: contain;
+}
+.new-arrival {
+    background: #d6d6ddbd;
+    backdrop-filter: blur(2px) !important;
+    opacity: 1;
+}
